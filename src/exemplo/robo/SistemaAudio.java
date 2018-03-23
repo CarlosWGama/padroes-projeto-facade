@@ -7,8 +7,8 @@ public class SistemaAudio {
 	public void testaHarwares() throws Exception {
 		System.out.println("Testando Hardwares de Áudio");
 		if (!Memoria.ativa)
-			throw new Exception("Memoria não reservada para áudio");
-		System.out.println("Audio OK");
+			throw new Exception("ERRO: Memoria não reservada para áudio");
+		System.out.println("SUCESSO: Audio OK");
 	}
 	
 	public void reproduzSom(Audios tipo) {
